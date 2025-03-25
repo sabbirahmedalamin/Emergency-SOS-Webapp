@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency SOS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">REACTIVE</div>
+    <div class="title">SOS</div>
+    <nav class="nav-buttons">
+      <button onclick="sendEmergencyMail()">Emergency Mail</button>
+      <button onclick="findNearby('police')">Nearest Police Station</button>
+      <button onclick="findNearby('hospital')">Nearest Hospitals</button>
+      <button onclick="findNearby('fire_station')">Fire Station</button>
+    </nav>
+    <div class="profile"><a href="#">Login</a></div>
+  </header>
+
+  <main>
+    <div id="map"></div>
+    <div class="radius">📍 Map Radius</div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="style.js"></script>
+</body>
+</html>
